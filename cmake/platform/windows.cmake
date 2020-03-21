@@ -103,6 +103,7 @@ endif()
 if(MSVC)
   # https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/
   add_compile_options(/Zc:__cplusplus)
+  set(CMAKE_CXX_STANDARD 14)
 endif()
 
 #
