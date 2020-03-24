@@ -84,14 +84,8 @@ if(WIN32)
   # enable Math Constants (https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants)
   add_definitions(-D_USE_MATH_DEFINES)
 
-  # do not define STRICT macros (minwindef.h or boost\winapi\basic_types.hpp)
-  add_definitions(-DNO_STRICT)
-
   # do not define min/max macros
   add_definitions(-DNOMINMAX)
-
-  # do not define STRICT macros (qtgui\qwindowdefs_win.h)
-  add_definitions(-DQ_NOWINSTRICT)
 
   # keep minimum windows headers inclusion
   add_definitions(-DWIN32_LEAN_AND_MEAN)
