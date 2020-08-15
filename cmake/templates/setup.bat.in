@@ -40,7 +40,7 @@ if not "!_PYTHON_FOUND!" == "!_PYTHON!" (
 endlocal & set PATH=%PATH%
 
 REM invoke Python script to generate necessary exports of environment variables
-FOR /F "delims=" %%i IN ('^"%_PYTHON% "%_SETUP_UTIL%" %*^"') DO %%i
+FOR /F "delims=" %%i IN ('^"%_PYTHON% "%_SETUP_UTIL%" %*^"') DO call %%i
 
 REM source all environment hooks
 set _HOOK_COUNT=0
